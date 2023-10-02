@@ -3,7 +3,7 @@ print("--countries of africa quiz--")
 score=0
 while len(countries)>0:
     print("Number of Countries to guess:")
-    country = input("Enter the name of a country:54")
+    country = input("Enter the name of a country:")
     if country in countries:
             print("Good Guess")
             score = score + 1
