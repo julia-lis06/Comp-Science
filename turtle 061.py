@@ -1,0 +1,10 @@
+import turtle
+scr = turtle.Screen()
+turtle.pensize(3)
+turtle.shape("turtle")
+turtle.forward(100)
+turtle.left(120)
+turtle.forward(100)
+turtle.left(120)
+turtle.forward(100)
+turtle.left(120)
