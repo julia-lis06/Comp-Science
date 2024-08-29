@@ -2,7 +2,7 @@ def bubble_sort(arr):
     n = len(arr)
     # Traverse through all elements in the list
     for i in range(n):
-        # Track if any elements were swapped in this iteration
+        # Track if any elements were swapped
         swapped = False
         # Last i elements are already sorted
         for j in range(0, n - i - 1):
