@@ -1,0 +1,25 @@
+def bubble_sort(arr):
+    n = len(arr)
+    # Traverse through all elements in the list
+    for i in range(n):
+        # Track if any elements were swapped in this iteration
+        swapped = False
+        # Last i elements are already sorted
+        for j in range(0, n - i - 1):
+            # Traverse the array from 0 to n-i-1
+            # Swap if the element found is greater than the next element
+            if arr[j] > arr[j + 1]:
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                swapped = True
+        # If no elements were swapped, the array is already sorted
+        if not swapped:
+            break
+ 
+if __name__ == "__main__":
+    # Get user input as a string and split into a list of strings
+    user_input = input("Enter numbers separated by spaces: ")
+    # Convert the list of strings to a list of integers
+    arr = list(map(int, user_input.split()))
+    print("Unsorted array:", arr)
+    bubble_sort(arr)
+    print("Sorted array:", arr)
